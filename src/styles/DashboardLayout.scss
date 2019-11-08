@@ -1,0 +1,62 @@
+@import './Colors.scss'; 
+
+html, body, #root, .App {
+	height: 100%;
+}
+
+.layout {
+	background-color: $seaweed;
+	color: $olive;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 100%;
+	width: 100vw;
+	overflow-y: auto;
+
+	h1 {
+		color: $olive;
+	}
+
+	.dashboard-background {
+		background-color: $white;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-top: 20px;
+		padding: 5px;
+		width: 80vw;	
+
+		@media all and (min-width: 535px) {
+			min-height: 40vh;
+			padding: 20px;
+        }
+	}
+
+	.MuiFormControlLabel-label {
+		color: $olive;
+		font-size: 12px;
+
+		@media all and (min-width: 535px) {
+            font-size: 15px;
+        }
+	}
+
+	.MuiRadio-colorSecondary.Mui-checked.MuiIconButton-colorSecondary {
+		color: $darkblue;
+	}
+
+	.MuiRadio-root:hover {
+		background-color: $lightmint !important;
+	}
+
+	.divider {
+		margin-bottom: 10px;
+		width: 90%;
+	}
+
+	.error {
+		color: $mint;
+		text-align: center;
+	}
+}

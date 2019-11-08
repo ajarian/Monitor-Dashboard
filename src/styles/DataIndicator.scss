@@ -1,0 +1,86 @@
+@import './Colors.scss'; 
+
+.indicator-layout {
+    color: $olive;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+
+    @media all and (min-width: 535px) {
+        height: 80%;
+    }
+
+    .voc-data {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+
+        @media all and (min-width: 535px) {
+            flex-direction: row;
+        }
+    }
+
+    .indicator-field {
+        margin-bottom: 15px;
+        text-align: center;
+
+        .field-name {
+            color: $darkblue;
+            font-weight: 600;
+            font-size: 20px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+
+            @media all and (min-width: 535px) {
+                font-size: 25px;
+            }
+        }
+
+        .max, .min {
+            color: $mint;
+            font-weight: 500;
+        }
+
+        .min {
+            margin-top: 10px;
+        }
+
+        @media all and (min-width: 535px) {
+            margin-bottom: 0;
+            margin-right: 35px;
+        }
+    }
+
+    .indicator-field:last-child {
+        margin-right: 0;
+    }
+    
+    .update-area {
+        align-self: flex-end;
+        font-size: 15px;
+        font-style: italic;
+        margin-bottom: 20px;
+        text-align: center;
+
+        .refresh {
+            color: $olive;
+            margin-left: 10px;
+            position: relative;
+            top: 6px;
+        }
+
+        .refresh:hover {
+            cursor: pointer;
+        }
+
+        @media all and (min-width: 535px) {
+            margin-bottom: 0;
+        }
+    }
+
+    
+}
